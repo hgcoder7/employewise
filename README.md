@@ -1,12 +1,34 @@
-# React + Vite
+# EmployWise - Frontend Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+EmployWise is a React-based user management system that allows users to authenticate, view a paginated list of users, edit user details, and log out. It integrates with `reqres.in` API for authentication and user data management.
 
-Currently, two official plugins are available:
+## Features
+- User Authentication (Login via `reqres.in` API)
+- Fetch and Display User List with Pagination
+- Edit User Details
+- Logout Functionality
+- Responsive UI with Bootstrap
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Usage
+### Login Credentials (For Testing)
+Use the following credentials to log in:
+```
+Email: eve.holt@reqres.in
+Password: cityslicka
+```
 
-## Expanding the ESLint configuration
+### User Management
+- After login, the **Users List** is displayed.
+- Users can **edit** details by clicking the "Edit" button.
+- Users can **navigate** through paginated results.
+- Users can **logout** by clicking the "Logout" button.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+## API Endpoints Used
+- **Login:** `POST https://reqres.in/api/login`
+- **Get Users:** `GET https://reqres.in/api/users?page={page}`
+- **Get User Details:** `GET https://reqres.in/api/users/{id}`
+- **Update User:** `PUT https://reqres.in/api/users/{id}`
+
